@@ -18,8 +18,8 @@ function ShowPlayers() {
 
 
   return (
-    <div className='grid md:grid-cols-3 px-6 mt-10'>
-        <h2>Show players</h2>
+    <div className='grid md:grid-cols-3 px-6 mt-10 items-center'>
+
 
         {
             player.map((item,key)=>(
