@@ -1,0 +1,72 @@
+
+
+
+
+
+-----------haeader-------------- 
+
+---------- step 1 --------------------
+Navbar
+The Navbar should match the Figma design and be responsive.
+Display the user's money in the Navbar, initially it will be 0.
+Banner
+Design the banner with a heading, text, background, and button as per Figma.
+Everytime On clicking the button, the user's coin will increase so that user can buy player.
+
+
+--------------------------------------------------
+
+----------------------------- step 2 -------------------------
+Player Data
+Create a JSON file for 10-15 players, each having information like playerId, name, country, image, role, batting/bowling type, and bidding price.
+You can create this JSON with AI systems such as Gemini , ChatGPT
+
+--------------------------------------------------------------
+Display Players
+Show all players in a card layout (3 columns recommended ) with the player's details
+Show Players name, country, image, role, batting/bowling type, and bidding price.
+Their will be a "Choose Player" button on each card. on Clicking it following will happen.
+Choose Player Functionality
+on Click "Choose Player" button , check if user have available coin or not.
+show an alert if user dont have available coin.
+Otherwise, add the player to the selected players list.
+
+----------------------------------------------
+
+Selected Players
+Display selected players' details in a card with one-column layout
+Each card will have player image , name , player role, price.
+a remove button for each player.
+
+-----------------------------------------------------------------
+
+---------------------------------- step 3 --------------------
+
+
+
+Newsletter Section
+Design the newsletter section according to Figma.
+Footer
+Design the footer section following the Figma design.
+
+
+--------------- END ----------------------
+
+
+
+
+
+
+
+
+
+////////////// my plan ---------
+
+1 step under header componnent 
+
+
+1.2 step /// make button.jsx componnenent
+
+2 step 
+
+/// make show Data componnenent 
