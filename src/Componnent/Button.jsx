@@ -1,8 +1,21 @@
 
 
 import React from 'react'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
-function Button() {
+import ShowPlayers from './ShowPlayers';
+function Button({togglebuttonTrue,togglebuttonfalse}) {
+
+
+
+
+
+
+  
+
+
+
   return (
     <div className='mt-4 px-6'>
 
@@ -14,10 +27,22 @@ function Button() {
             {/* add active funtinal lity */}
             <div className='flex space-x-4'>
 
-                <button className='focus:bg-yellow-400 px-3 text-balance font-bold rounded-md'>Available</button>
+                <button className='focus:bg-yellow-400 px-3 text-balance font-bold rounded-md'
+
+                onClick={togglebuttonTrue}
+
 
                 
-                <button className='focus:bg-yellow-400 px-3 text-balance font-bold rounded-md'>Selected ()</button>
+                >Available</button>
+
+                
+                <button className='focus:bg-yellow-400 px-3 text-balance font-bold rounded-md'
+                
+                onClick={togglebuttonfalse}
+
+                
+                
+                >Selected ()</button>
             </div>
         </section>
 

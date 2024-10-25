@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../index.css'
 function ShowsAllPlayer({ Allplayers }) {
   console.log(Allplayers);
 
@@ -14,14 +14,14 @@ function ShowsAllPlayer({ Allplayers }) {
     role,
   } = Allplayers;
   return (
-    <div>
+    <div className="api">
       <div className="p-2">
 
         <div className="border-2 p-3 rounded-md">
           <img
             src={image}
             alt={name}
-            className="object-cover w-full h-56 rounded-md"
+            className="object-cover w-full h-96 object-top rounded-md"
           ></img>
 
           <div className="flex justify-between ">
@@ -58,7 +58,7 @@ function ShowsAllPlayer({ Allplayers }) {
             <p className="text-xl font-semibold">Price: ${biddingPrice}</p>
 
             {/* this button make dynamic */}
-            
+
             <button className="border-2 px-4 py-1 rounded-md font-semibold">Choose player</button>
           </div>
 

@@ -6,6 +6,7 @@ import Banner from './Componnent/Banner'
 import 'react-toastify/dist/ReactToastify.css';
 import Button from './Componnent/Button';
 import ShowPlayers from './Componnent/ShowPlayers';
+import Selected from './Componnent/Selected';
 function App() {
   /// button click add reward 
   const [ credit , setcredit ] = useState(0);
@@ -21,6 +22,22 @@ function App() {
   console.log(credit);
 
   /// first part done
+  // page to another page 
+
+  /// toggle use condition
+
+  const [ page , setpage  ] = useState(false)
+
+  const togglebuttonfalse = ()=>{
+    setpage(false)
+
+  }
+  const togglebuttonTrue = ()=>{
+    setpage(true)
+
+  }
+
+
 
 
 
@@ -36,14 +53,19 @@ function App() {
       </header>
       <ToastContainer autoClose={3000}/>
       <section>
-        <Button/>
+        <Button  togglebuttonfalse={togglebuttonfalse} togglebuttonTrue={togglebuttonTrue} />
+
       </section>
       {/* main started */}
 
       <main>
-        <ShowPlayers/>
         
-        
+        {
+          page ? <ShowPlayers/> : <Selected/>
+
+        }
+
+ 
       </main>
 
 
