@@ -1,7 +1,9 @@
 import React from "react";
 import '../index.css'
-function ShowsAllPlayer({ Allplayers }) {
-  console.log(Allplayers);
+
+function ShowsAllPlayer({ post,selectedCounter }) {
+
+ /// get from showplayers
 
   const {
     battingType,
@@ -12,7 +14,8 @@ function ShowsAllPlayer({ Allplayers }) {
     name,
     playerId,
     role,
-  } = Allplayers;
+  } = post;
+
   return (
     <div className="api">
       <div className="p-2">
@@ -59,7 +62,15 @@ function ShowsAllPlayer({ Allplayers }) {
 
             {/* this button make dynamic */}
 
-            <button className="border-2 px-4 py-1 rounded-md font-semibold">Choose player</button>
+            <button className="border-2 px-4 py-1 rounded-md font-semibold"
+
+            onClick={()=>selectedCounter(post,biddingPrice)} 
+            /// here ctach data 
+            /// use to show data and player counter 
+            
+            
+            
+            >Choose player</button>
           </div>
 
 

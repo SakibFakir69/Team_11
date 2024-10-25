@@ -5,7 +5,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 import ShowPlayers from './ShowPlayers';
-function Button({togglebuttonTrue,togglebuttonfalse}) {
+function Button({togglebuttonTrue,togglebuttonfalse,counter}) {
 
 
 
@@ -42,7 +42,7 @@ function Button({togglebuttonTrue,togglebuttonfalse}) {
 
                 
                 
-                >Selected ()</button>
+                >Selected ({counter})</button>
             </div>
         </section>
 

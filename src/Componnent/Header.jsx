@@ -1,6 +1,14 @@
 import React from "react";
 
 function Header({ credit }) {
+
+
+
+
+
+
+
+
   console.log("header", credit);
   return (
     <div className="px-8 mt-4">

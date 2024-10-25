@@ -3,7 +3,7 @@ import React from "react";
 function Banner({creditedMoney}) {
 
 
-    const fixedMoney = 60000000;
+    const fixedMoney = 50000000;
 
   return (
     <div className="px-8">
