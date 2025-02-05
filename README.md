@@ -1,8 +1,29 @@
-# React + Vite
+# 🌟 Team_11 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview  
+Assiment-08ph is a project designed to showcase a set of features, including team management, user interactions, and a smooth user experience. It is built using React and integrates modern tools for efficient development.  
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologies Used  
+- React  
+- ReactDOM  
+- React Toastify (for notifications)  
+- Prop-Types (for prop validation)  
+
+## 🔥 Features  
+ 
+- Team management  
+- Toast notifications for user feedback  
+- Responsive design  
+
+## 📦 Dependencies  
+- `prop-types` (for prop validation)  
+- `react` (UI library)  
+- `react-dom` (DOM bindings for React)  
+- `react-toastify` (for showing notifications)  
+
+## 🛠️ Installation & Setup  
+1. **Clone the repository:**  
+   ```sh
+   git clone https://github.com/your-username/assiment-08ph.git
+   cd assiment-08ph
