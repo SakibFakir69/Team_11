@@ -64,7 +64,7 @@ function ShowsAllPlayer({ post,selectedCounter }) {
 
             <button className="border-2 px-4 py-1 rounded-md font-semibold"
 
-            onClick={()=>selectedCounter(post,biddingPrice)} 
+            onClick={()=>selectedCounter(post,biddingPrice,  playerId)} 
             /// here ctach data 
             /// use to show data and player counter 
             

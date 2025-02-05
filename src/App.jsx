@@ -8,6 +8,10 @@ import ShowPlayers from "./Componnent/ShowPlayers";
 import Selected from "./Componnent/Selected";
 import Live from "./Componnent/Live";
 import Footer from "./Componnent/Footer";
+
+
+
+//// header footer review
 function App() {
   /// button click add reward
   const [credit, setcredit] = useState(0);
@@ -34,6 +38,8 @@ function App() {
     setpage(true);
   };
 
+ 
+
   /// now work on player add section
   /// 1 . make here function
   // 2. pass function
@@ -44,7 +50,10 @@ function App() {
 
   const [plr, setplr] = useState([]);
 
-  const selectedCounter = (info, taka) => {
+
+  /// pass this is button.jsx
+
+  const selectedCounter = (info, taka,  playerId) => {
     if (select >= 6) {
       toast.error("Maximum player added");
       return;
@@ -60,7 +69,32 @@ function App() {
     setplr((prevplr) => [...prevplr, info]);
 
     toast.info(`${info.name} selected`);
+
+
   };
+
+  // catch id button 
+  // pass id selected.jsx + pass all data of player
+  // /then use filter button click
+
+
+
+
+  const removePlayer = (idx)=>{
+    const removeplr =plr.filter((playerx)=> playerx.playerId!==idx);
+    console.log(removeplr)
+    setplr(removeplr);
+
+    setselect(prev => prev-1);
+    if(select<=0)
+    {
+      setselect(0);
+    }
+    toast.info("player removed successfully!");
+    console.log(idx);
+    console.log("removed")
+  }
+
 
   return (
     <div>
@@ -75,9 +109,16 @@ function App() {
           togglebuttonfalse={togglebuttonfalse}
           togglebuttonTrue={togglebuttonTrue}
           counter = {select}
+          page={page}
+          
+          
+         
         />
       </section>
       {/* main started */}
+
+   
+ 
 
       <main>
         {page ? (
@@ -87,6 +128,9 @@ function App() {
             counter={select}
             selectedCounter={selectedCounter}
             data={plr}
+            removePlayer={removePlayer}
+            togglebuttonTrue={togglebuttonTrue}
+            
           />
         )}
       </main>

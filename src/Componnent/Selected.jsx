@@ -4,12 +4,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { prototype } from 'postcss/lib/previous-map'
 import Live from './Live';
-function Selected({counter,data }) {
+function Selected({counter,data,removePlayer ,togglebuttonTrue}) {
+    
 
     if(!data)
     {
         return null;
     }
+
 
  
 
@@ -28,9 +30,12 @@ function Selected({counter,data }) {
 
         {
             data.map((item,key)=>(
-                <Live item={item}/>
+                <Live item={item}  removePlayer={removePlayer} />
             ))
         }
+        <div>
+            <button className='border-2 mt-10 px-2 py-3 rounded-md shadow-md text-xl font-semibold' onClick={()=>togglebuttonTrue(false)} >Add More player</button>
+        </div>
         
      
       
